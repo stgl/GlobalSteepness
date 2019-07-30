@@ -30,15 +30,15 @@ dr = np.load('guatemala/dr.npy')
 dr_regress = dr_regress + [np.log10(x) for x in dr]
 dr = np.load('taiwan/dr.npy')
 dr_regress = dr_regress + [np.log10(x) for x in dr]
-ks_regress = ks_regress + [np.log10(x[0]) for x in ksdict['costarica']['0_4']] + [np.log10(y[0]) for y in ksdict['guatemala']['0_4']] + [np.log10(z[0]) for z in ksdict['taiwan']['0_4']]
+ks_regress = ks_regress + [np.log10(x) for x in ksdict['costarica']['0_4']] + [np.log10(y) for y in ksdict['guatemala']['0_4']] + [np.log10(z) for z in ksdict['taiwan']['0_4']]
 
 dr_regress_check = list()
 ks_regress_check = list()
 
 for (dr_el, ks_el) in zip(dr_regress, ks_regress):
-     if np.isfinite(dr_el) and np.isfinite(ks_el):
-         dr_regress_check.append(dr_el)
-         ks_regress_check.append(ks_el)
+    if np.isfinite(dr_el) and np.isfinite(ks_el):
+        dr_regress_check.append(dr_el)
+        ks_regress_check.append(ks_el)
 
 A = np.vstack([dr_regress_check, np.ones(len(dr_regress_check))]).T
 
@@ -67,15 +67,15 @@ dr = np.load('brazil/dr.npy')
 dr_regress = dr_regress + [np.log10(x) for x in dr]
 dr = np.load('venezuela/dr.npy')
 dr_regress = dr_regress + [np.log10(x) for x in dr]
-ks_regress = ks_regress + [np.log10(x[0]) for x in ksdict['brazil']['0_4']] + [np.log10(y[0]) for y in ksdict['venezuela']['0_4']]
+ks_regress = ks_regress + [np.log10(x) for x in ksdict['brazil']['0_4']] + [np.log10(y) for y in ksdict['venezuela']['0_4']]
 
 dr_regress_check = list()
 ks_regress_check = list()
 
 for (dr_el, ks_el) in zip(dr_regress, ks_regress):
-     if np.isfinite(dr_el) and np.isfinite(ks_el):
-         dr_regress_check.append(dr_el)
-         ks_regress_check.append(ks_el)
+    if np.isfinite(dr_el) and np.isfinite(ks_el):
+        dr_regress_check.append(dr_el)
+        ks_regress_check.append(ks_el)
 
 A = np.vstack([dr_regress_check, np.ones(len(dr_regress_check))]).T
 
@@ -110,15 +110,15 @@ dr = np.load('guatemala/dr.npy')
 dr_regress = dr_regress + [np.log10(x) for x in dr]
 dr = np.load('taiwan/dr.npy')
 dr_regress = dr_regress + [np.log10(x) for x in dr]
-ks_regress = ks_regress + [np.log10(x[0]) for x in ksdict['brazil']['0_4']] + [np.log10(y[0]) for y in ksdict['venezuela']['0_4']] + [np.log10(x[0]) for x in ksdict['costarica']['0_4']] + [np.log10(y[0]) for y in ksdict['guatemala']['0_4']] + [np.log10(z[0]) for z in ksdict['taiwan']['0_4']]
+ks_regress = ks_regress + [np.log10(x) for x in ksdict['brazil']['0_4']] + [np.log10(y) for y in ksdict['venezuela']['0_4']] + [np.log10(x) for x in ksdict['costarica']['0_4']] + [np.log10(y) for y in ksdict['guatemala']['0_4']] + [np.log10(z) for z in ksdict['taiwan']['0_4']]
 
 dr_regress_check = list()
 ks_regress_check = list()
 
 for (dr_el, ks_el) in zip(dr_regress, ks_regress):
-     if np.isfinite(dr_el) and np.isfinite(ks_el):
-         dr_regress_check.append(dr_el)
-         ks_regress_check.append(ks_el)
+    if np.isfinite(dr_el) and np.isfinite(ks_el):
+        dr_regress_check.append(dr_el)
+        ks_regress_check.append(ks_el)
 
 
 A = np.vstack([dr_regress_check, np.ones(len(dr_regress_check))]).T
@@ -153,15 +153,15 @@ dr = np.load('guatemala/dr.npy')
 dr_regress = dr_regress + [np.log10(x) for x in dr]
 dr = np.load('taiwan/dr.npy')
 dr_regress = dr_regress + [np.log10(x) for x in dr]
-ks_regress = ks_regress + [np.log10(x[0]) for x in ksdict['brazil']['0_5']] + [np.log10(y[0]) for y in ksdict['venezuela']['0_5']] + [np.log10(x[0]) for x in ksdict['costarica']['0_5']] + [np.log10(y[0]) for y in ksdict['guatemala']['0_5']] + [np.log10(z[0]) for z in ksdict['taiwan']['0_5']]
+ks_regress = ks_regress + [np.log10(x) for x in ksdict['brazil']['0_5']] + [np.log10(y) for y in ksdict['venezuela']['0_5']] + [np.log10(x) for x in ksdict['costarica']['0_5']] + [np.log10(y) for y in ksdict['guatemala']['0_5']] + [np.log10(z) for z in ksdict['taiwan']['0_5']]
 
 dr_regress_check = list()
 ks_regress_check = list()
 
 for (dr_el, ks_el) in zip(dr_regress, ks_regress):
-     if np.isfinite(dr_el) and np.isfinite(ks_el):
-         dr_regress_check.append(dr_el)
-         ks_regress_check.append(ks_el)
+    if np.isfinite(dr_el) and np.isfinite(ks_el):
+        dr_regress_check.append(dr_el)
+        ks_regress_check.append(ks_el)
 
 
 A = np.vstack([dr_regress_check, np.ones(len(dr_regress_check))]).T
@@ -198,15 +198,15 @@ dr = np.load('guatemala/dr.npy')
 dr_regress = dr_regress + [np.log10(x) for x in dr]
 dr = np.load('taiwan/dr.npy')
 dr_regress = dr_regress + [np.log10(x) for x in dr]
-ks_regress = ks_regress + [np.log10(x[0]) for x in ksdict['brazil']['0_6']] + [np.log10(y[0]) for y in ksdict['venezuela']['0_6']] + [np.log10(x[0]) for x in ksdict['costarica']['0_6']] + [np.log10(y[0]) for y in ksdict['guatemala']['0_6']] + [np.log10(z[0]) for z in ksdict['taiwan']['0_6']]
+ks_regress = ks_regress + [np.log10(x) for x in ksdict['brazil']['0_6']] + [np.log10(y) for y in ksdict['venezuela']['0_6']] + [np.log10(x) for x in ksdict['costarica']['0_6']] + [np.log10(y) for y in ksdict['guatemala']['0_6']] + [np.log10(z) for z in ksdict['taiwan']['0_6']]
 
 dr_regress_check = list()
 ks_regress_check = list()
 
 for (dr_el, ks_el) in zip(dr_regress, ks_regress):
-     if np.isfinite(dr_el) and np.isfinite(ks_el):
-         dr_regress_check.append(dr_el)
-         ks_regress_check.append(ks_el)
+    if np.isfinite(dr_el) and np.isfinite(ks_el):
+        dr_regress_check.append(dr_el)
+        ks_regress_check.append(ks_el)
 
 
 A = np.vstack([dr_regress_check, np.ones(len(dr_regress_check))]).T
